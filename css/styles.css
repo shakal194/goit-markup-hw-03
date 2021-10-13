@@ -58,8 +58,9 @@ body {
 .page-header {
   display: flex;
   justify-content: space-evenly;
-
   width: 1600px;
+  border: 1px solid #ECECEC;
+  border-width: 0 0 1px 0;
 }
 
 .nav,
@@ -172,21 +173,16 @@ body {
   margin-bottom: 94px;
 }
 
-.features-section {
+.features-section .container {
   display: flex;
   justify-content: center;
-  }
-
-.container .features-section {
-  display: flex;
-}
-
-.features-section {
-  display: flex;
+  outline: 5px solid red;
   }
 
 .features-list {
   display: flex;
+  justify-content: center;
+  background-color: navy;
 }
 
 .features-item:not(:last-child) {
