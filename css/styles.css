@@ -25,6 +25,10 @@ ul {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 :root {
   --black-color: #212121;
   --blue-color: #2196f3;
@@ -40,10 +44,6 @@ body {
   font-size: 14px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-}
-
-.link {
-  text-decoration: none;
 }
 
 .container {
@@ -74,13 +74,12 @@ body {
 }
 
 .page-header {
-  border: 1px solid #ececec;
-  border-width: 0 0 1px 0;
+  border-bottom: 1px solid #ececec;
 }
 
 .page-header .container {
   display: flex;
-  }
+}
 
 .nav,
 .contact-list {
@@ -91,7 +90,7 @@ body {
 .nav-list,
 .contact-list {
   display: flex;
-  }
+}
 
 .logo-link {
   padding-top: 24px;
@@ -167,11 +166,11 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
- }
+}
 
 .hero-title {
-  display: flex;
-  justify-content: center;
+  max-width: 696px;
+  margin-bottom: 30px;
   text-align: center;
   font-weight: 900;
   font-size: 44px;
@@ -182,8 +181,6 @@ body {
 }
 
 .hero-button {
-  /* display: flex;
-  justify-content: center; */
   cursor: pointer;
   background-color: var(--blue-color);
   font-weight: 700;
@@ -212,6 +209,7 @@ body {
 }
 
 .features-item-title {
+  margin-bottom: 10px;
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
@@ -232,6 +230,7 @@ body {
 }
 
 .works img {
+  display: block;
   max-width: 100%;
   height: auto;
 }
@@ -299,7 +298,7 @@ body {
 .footer {
   padding: 60px 0;
   background-color: var(--bgc-black-color);
- }
+}
 
 .footer-link {
   margin-bottom: 20px;
@@ -346,6 +345,7 @@ body {
 }
 
 .filter-button {
+  padding: 6px 22px;
   cursor: pointer;
   font-weight: 500;
   font-size: 16px;
@@ -379,14 +379,12 @@ body {
 }
 
 .project-container {
-  margin-left: 24px;
-  margin-right: 24px;
-  margin-bottom: 20px;
+  margin: 20px 24px;
 }
 
 .project-title {
   margin-bottom: 4px;
-    font-weight: 700;
+  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
